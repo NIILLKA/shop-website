@@ -1,0 +1,248 @@
+:root{
+    --bg-color:#f5f5f5;
+    --text-color:#6c757d;
+    --accent-color:#ffd333;
+    --contrast-color:#3d454d;
+    --gray-color:#c3c3c3;
+    --red-color:#ff0000
+}
+/* All style START*/
+html, body{
+    height:100%;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color:var(--bg-color);
+    color:var(--text-color);
+}
+a{
+    color:var(--text-color);
+    text-decoration: none;
+    transition: all 0.3s;
+}
+a:hover{
+    text-decoration:underline;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+.wrapper{
+    min-height: 100%;
+    display:flex;
+    flex-direction: column;
+}
+
+
+/*All style END*/
+
+.social-icons{
+    list-style:none;
+}
+
+.social-icons li a{
+    margin-left:10px;
+}
+
+.social-icons a{
+    background-color:var(--accent-color);
+    color:var(--contrast-color);
+    float:Left;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    text-align:center;
+    line-height:30px;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover{
+    background-color:var(--contrast-color);
+    color:var(--accent-color);
+}
+
+.btn, .dropdown-menu{
+    border-radius:0;
+    border:none;
+    
+}
+
+.form-control{
+    border-radius:0;
+}
+.form-control:focus{
+    color:var(--text-color);
+    border-color:var(--accent-color);
+    box-shadow:none;
+}
+
+.header-top .btn{
+    background-color:#fff;
+    color:var(--contrast-color);
+}
+
+.header-logo{
+    font-size:3em;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.header-logo:hover{
+    color:var(--accent-color);
+    text-decoration: none;
+}
+
+.logo-contrast{
+    color:var(--accent-color);
+}
+
+.s-outline{
+    border:solid 1px var(--accent-color);
+}
+
+.header-bottom {
+    border-top: 3px solid var(--accent-color);
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.3);
+}
+
+.header-bottom .navbar .nav-link{
+    color:#fff;
+    letter-spacing:0.1rem;
+    
+    
+}
+
+
+.header-bottom .navbar .nav-link:hover{
+    color:var(--accent-color);
+    text-decoration: none;
+}
+.header-bottom .navbar .nav-link.active{
+    color:var(--accent-color);
+}
+
+/*main */
+.carousel-caption{
+    text-shadow: 0px 3px 3px #000;
+    letter-spacing:0.1rem;
+}
+
+.main{
+    flex:1 1 auto;center
+}
+
+.sectoin-title{
+    text-transform:uppercase;
+    color:var(--contrast-color);
+    border-bottom:3px solid var(--accent-color);
+    margin-top:15px;
+}
+
+.privelegies .items{
+    background-color:#fff;
+    padding:10px 5px 5px 5px;
+    text-align:center;
+    margin-top:5px;
+    height:100%;
+    transition: all 0.3s;
+}
+
+.privelegies .items:hover{
+    box-shadow: 0px 10px 20px -10px #000;
+    
+}
+
+.privelegies i{
+    font-size:30px;
+    color:var(--contrast-color);
+}
+
+
+
+/* product-backet */
+.product-card{
+    border:1px solid var(--gray-color);
+    background-color:#fff;
+    transition: all 0.3s;
+    position:relative;
+}
+
+.product-card:hover{
+    box-shadow: 0px 10px 20px -10px #000;
+}
+
+.product-card-offer{
+    position:absolute;
+    right:5px;
+    top:5px;
+    color:#fff;
+}
+
+.product-card-offer div{
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    text-align:center;
+    line-height:40px;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+
+.offer-hit{
+    background-color:var(--accent-color);
+}
+
+.offer-sale{
+        background-color:var(--red-color);
+}
+
+.product-details h4 a{
+    text-decoration:none;
+    font-size:20px;
+    text-transform:uppercase;
+}
+
+.product-details h4 a:hover{
+    color:var(--accent-color);
+}
+
+
+.product-thumb{
+    text-align:centre;
+}
+
+
+.rroduct-thimb img{
+    max-height:250px;
+}
+
+
+.product-descript{
+    height:50px;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+
+.product-details{
+    margin:5px;
+}
+
+
+.product-details-bottom{
+    border-top:2px solid var(--gray-color);
+}
+
+
+.product-price{
+    font-size:20px;
+    color:var(--red-color);
+    margin:10px;
+}
