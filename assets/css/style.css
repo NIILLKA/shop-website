@@ -243,6 +243,17 @@ img{
 
 .product-price{
     font-size:20px;
-    color:var(--red-color);
+    color:black;
     margin:10px;
+}
+
+
+
+.product-links{
+    position:absolute;
+}
+
+
+.product-details-bottom{
+    position:relative;
 }
