@@ -198,7 +198,7 @@ img{
 }
 
 .offer-sale{
-        background-color:var(--red-color);
+    background-color:var(--red-color);
 }
 
 .product-details h4 a{
@@ -245,15 +245,4 @@ img{
     font-size:20px;
     color:black;
     margin:10px;
-}
-
-
-
-.product-links{
-    position:absolute;
-}
-
-
-.product-details-bottom{
-    position:relative;
 }
