@@ -246,3 +246,43 @@ img{
     color:black;
     margin:10px;
 }
+
+/* Начальное состояние (скрыто) */
+.dropdown-menu {
+  max-height: 0; /* Максимальная высота — 0, чтобы скрыть содержимое */
+  overflow: hidden; /* Обрезаем текст, чтобы не выходил за границы */
+  opacity: 0; /* Невидимое состояние */
+  transform: translateY(-10px); /* Слегка сдвинуто вверх */
+  transition: max-height 0.3s ease, opacity 0.3s ease; /* Анимация высоты и прозрачности */
+}
+
+/* Активное состояние (открыто) */
+.dropdown-menu.show {
+  max-height: 500px; /* Достаточно большое значение для полного раскрытия */
+  opacity: 1; /* Полностью видимое */
+}
+
+/* Анимация для элементов dropdown-item */
+.dropdown-menu.show .dropdown-item {
+  opacity: 0;
+  transform: translateY(-10px);
+  animation: fadeIn 0.3s ease forwards;
+  text-decoration: none;
+}
+
+.dropdown-menu.show .dropdown-item{
+  animation-delay: 0.2s;/*Анимация с классом .item*/
+}
+
+/* Ключевые кадры для анимации */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
