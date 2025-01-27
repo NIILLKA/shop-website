@@ -33,3 +33,35 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdownToggle = document.querySelector(".dropdown-toggle");
+  const dropdown = dropdownToggle.parentElement;
+
+  dropdownToggle.addEventListener("click", function () {
+    dropdown.classList.toggle("show");
+  });
+
+  // Закрытие меню при клике вне его
+  document.addEventListener("click", function (event) {
+    if (!dropdown.contains(event.target)) {
+      dropdown.classList.remove("show");
+    }
+  });
+});
+
+
+$(window).scroll(function(){
+    if ($(this).scrollTop()>600){
+        $(".up-set").fadeIn();
+    } else {
+        $(".up-set").fadeOut();
+    }
+});
+
+
+$(".up-set").click(function(){
+    top: 0, // Координата верха страницы
+    behavior; 'smooth' 
+});

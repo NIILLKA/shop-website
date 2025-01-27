@@ -260,6 +260,7 @@ img{
 .dropdown-menu.show {
   max-height: 500px; /* Достаточно большое значение для полного раскрытия */
   opacity: 1; /* Полностью видимое */
+  transition: all 0.3s;
 }
 
 /* Анимация для элементов dropdown-item */
@@ -286,3 +287,66 @@ img{
   }
 }
 
+
+.nav-link dropdown-toggle{
+    transform: rotate(0deg);
+}
+
+
+/* Переворачиваем стрелку, когда меню открыто */
+.dropdown.show .dropdown-toggle::after {
+  transform: rotate(180deg);
+}
+
+
+/*footer*/
+.footer{
+    background:var(--contrast-color);
+    color:#fff;
+    padding:20px;
+}
+
+
+.footer a{
+    color:#fff;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+.footer a:hover{
+    color:var(--accent-color);
+
+}
+
+
+
+.footer h4{
+    color:var(--accent-color);
+}
+
+
+.up-set{
+    position:fixed;
+    background-color:var(--contrast-color);
+    right:30px;
+    bottom:30px;
+    border-radius:50%;
+    font-size:30px;
+    height:50px;
+    width:50px;
+    color:#fff;
+    z-index: 9999; 
+    opacity:1;
+    display:none;
+}
+
+
+.up-set:hover{
+    background-color:var(--accent-color);
+    transition:all 0.4s;
+    color:black;
+    opacity:0.8;
+    
+    
+}
