@@ -24,6 +24,7 @@ a{
 }
 a:hover{
     text-decoration:underline;
+    text-decoration: none;
 }
 img{
     max-width:100%;
@@ -125,6 +126,22 @@ img{
     color:var(--accent-color);
 }
 
+.product-img-td{
+    width:100px;
+    text-align: center;
+}
+
+
+button.no-border {
+    border: none;
+    background: none; /* Опционально, если нужно убрать фон */
+}
+
+
+button.no-border:hover{
+    color:var(--accent-color);
+    transition:all 0.3s;
+}
 /*main */
 .carousel-caption{
     text-shadow: 0px 3px 3px #000;
@@ -217,7 +234,7 @@ img{
 }
 
 
-.rroduct-thimb img{
+.product-thimb img{
     max-height:250px;
 }
 
@@ -296,6 +313,7 @@ img{
 /* Переворачиваем стрелку, когда меню открыто */
 .dropdown.show .dropdown-toggle::after {
   transform: rotate(180deg);
+  animation-delay: 0.2s;
 }
 
 
@@ -329,7 +347,7 @@ img{
 .up-set{
     position:fixed;
     background-color:var(--contrast-color);
-    right:30px;
+    left:30px;
     bottom:30px;
     border-radius:50%;
     font-size:30px;
@@ -339,6 +357,7 @@ img{
     z-index: 9999; 
     opacity:1;
     display:none;
+    border:none;
 }
 
 
@@ -347,6 +366,36 @@ img{
     transition:all 0.4s;
     color:black;
     opacity:0.8;
-    
-    
+}
+
+
+/* чат-помошник start */
+.chat-mes{
+    background-color:var(--contrast-color);
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    z-index:9999;
+    border-radius:50%;
+    height:50px;
+    width:50px;
+    font-size:30px;
+    color:white;
+    border:none;
+    display:none;
+}
+
+
+.chat-mes:hover{
+    background-color:var(--accent-color);
+    transition:all 0.4s;
+    color:black;
+}
+/* чат-помошник end*/
+
+
+
+
+.order{
+    text-align: center;
 }

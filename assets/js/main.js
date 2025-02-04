@@ -18,39 +18,6 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-document.addEventListener("DOMContentLoaded", function () {
-  const dropdownToggle = document.querySelector(".dropdown-toggle");
-  const dropdownMenu = document.querySelector(".dropdown-menu");
-
-  dropdownToggle.addEventListener("click", function () {
-    dropdownMenu.classList.toggle("show");
-  });
-
-  // Закрытие меню при клике вне его
-  document.addEventListener("click", function (event) {
-    if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
-      dropdownMenu.classList.remove("show");
-    }
-  });
-});
-
-
-document.addEventListener("DOMContentLoaded", function () {
-  const dropdownToggle = document.querySelector(".dropdown-toggle");
-  const dropdown = dropdownToggle.parentElement;
-
-  dropdownToggle.addEventListener("click", function () {
-    dropdown.classList.toggle("show");
-  });
-
-  // Закрытие меню при клике вне его
-  document.addEventListener("click", function (event) {
-    if (!dropdown.contains(event.target)) {
-      dropdown.classList.remove("show");
-    }
-  });
-});
-
 
 $(window).scroll(function(){
     if ($(this).scrollTop()>600){
@@ -62,6 +29,18 @@ $(window).scroll(function(){
 
 
 $(".up-set").click(function(){
-    top: 0, // Координата верха страницы
-    behavior; 'smooth' 
+    window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Плавная прокрутка
+        });
 });
+
+
+
+
+
+
+
+
+
+
